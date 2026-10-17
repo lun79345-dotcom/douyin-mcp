@@ -1,0 +1,37 @@
+# --- Login state / secrets: NEVER commit ---
+cookies/
+**/cookies/
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+verify_code.txt
+conf.py
+.env
+.env.*
+*.cookie
+*.cookies
+
+# --- Upstream dependency (cloned by install.sh) ---
+social-auto-upload/
+
+# --- Runtime artifacts ---
+*.log
+*.pid
+server.pid
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+debug.png
+
+# --- Python / tooling ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+gitleaks-report*
